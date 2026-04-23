@@ -141,17 +141,12 @@ with tab1:
     st.markdown("### 🎬 Humanoid Robot Marathon – Public Demonstration")
     st.markdown("*Watch our humanoid robot running in a live marathon event. Real‑world performance, endurance, and AI in action.*")
     
-    # =====================================================
-    # 🔽 🔽 🔽 PUT YOUR GITHUB VIDEO LINK BELOW 🔽 🔽 🔽
-    # =====================================================
-    ROBOT_VIDEO_URL = "https://raw.githubusercontent.com/Deslandes1/your_repo/main/robot_marathon.mp4"
-    # =====================================================
-    # 👆 👆 👆 REPLACE WITH YOUR ACTUAL VIDEO URL 👆 👆 👆
-    # =====================================================
+    # ✅ Your actual GitHub raw video link
+    ROBOT_VIDEO_URL = "https://raw.githubusercontent.com/Deslandes1/Humanoid-Robot-Built-by-Gesner-Deslandes/main/Humanoid%20robot.mp4"
     
     col_vid, col_desc = st.columns([2, 1])
     with col_vid:
-        if ROBOT_VIDEO_URL != "https://raw.githubusercontent.com/Deslandes1/your_repo/main/robot_marathon.mp4":
+        if ROBOT_VIDEO_URL:
             st.video(ROBOT_VIDEO_URL, format="video/mp4", start_time=0)
             st.caption("📽️ Humanoid robot during public marathon – real‑time demonstration")
         else:
